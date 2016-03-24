@@ -1,0 +1,24 @@
+{
+    "name": "glugox/core",
+    "description": "Magento 2 component home.",
+    "require": {
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "version": "0.1.0",
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Glugox/Core"
+            ]
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ervin Beciragic",
+            "homepage": "https://www.glugox.com/",
+            "role": "Developer"
+        }
+    ]
+}
