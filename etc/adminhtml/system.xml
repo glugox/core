@@ -12,17 +12,5 @@
         <tab id="glugox" translate="label" sortOrder="200">
             <label>Glugox</label>
         </tab>
-        <section id="glugox_home" showInDefault="1">
-            <tab>glugox</tab>
-            <label>Glugox components home</label>
-            <resource>Magento_Config::config</resource>
-            <group id="general" showInDefault="1">
-                <label>General Settings</label>
-                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Enabled</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
-            </group>
-        </section>
     </system>
 </config>

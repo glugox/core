@@ -9,6 +9,7 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Glugox_Core::glugox" title="Glugox" module="Glugox_Core" sortOrder="31" dependsOnModule="Glugox_Core" resource="Glugox_Core::glugox" />
+        <add id="Glugox_Core::glugox_data" title="Data" module="Glugox_Core" sortOrder="10" parent="Glugox_Core::glugox" dependsOnModule="Glugox_Core" resource="Glugox_Core::glugox"/>
+        <add id="Glugox_Core::glugox" title="Glugox" module="Glugox_Core" sortOrder="70" dependsOnModule="Glugox_Core" resource="Glugox_Core::glugox" />
     </menu>
 </config>
