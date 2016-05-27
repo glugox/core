@@ -11,34 +11,36 @@
 namespace Glugox\Core\Api;
 
 
-use Magento\Framework\Model\AbstractModel;
-
 interface ProcessServiceInterface
 {
 
     /**
      * @param $code
      * @param array $data
+     * @param bool $forceNew
+     * @return mixed
      */
-    public function getProcess($code, array $data);
+    public function getProcess($code, array $data, $forceNew = false);
 
 
     /**
-     * @param Instance $process
-     * @return Instance
+     * @param mixed $process
+     * @return mixed
      */
-    public function startProcess( AbstractModel $process );
+    public function startProcess( $process );
 
     /**
-     * @param Instance $process
-     * @return Instance
+     * @param $process
+     * @param null $error
+     * @return mixed
      */
-    public function finishProcess( AbstractModel $process, $error = null );
+    public function finishProcess( $process, $error = null );
 
 
     /**
-     * @param Instance $process
-     * @return Instance
+     * @param $process
+     * @param array $data
+     * @return mixed
      */
-    public function updateProcess( AbstractModel $process, $data= [] );
+    public function updateProcess( $process, array $data= [] );
 }
