@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Glugox\Process\Api;
+namespace Glugox\Core\Api;
 
 
 use Magento\Framework\Model\AbstractModel;
